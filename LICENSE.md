@@ -1,3 +1,5 @@
+# LICENSE
+
 ŌvSim Package License
 
 ŌvSim is available under the conditions of The MIT License (MIT)
