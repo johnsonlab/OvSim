@@ -43,9 +43,9 @@ Panel 2A shows the trend of decline of the primordial pool over time after execu
 
 Panel 2B is a plot of the growth and death of individual follicles that die within the 420 days of simulated time. Granulosa cell number is represented by the dashed lines, and the time (and follicle ``size") of death is indicated by the letter ``D."
 
-![2B](2B.png)
+![2B](OvSim_Figures/2B.png)
 
 Last, Panel 2C is a histogram plot of the distribution of follicles that survive to ovulatory size, grouped in 4.5 day increments equivalent to the modeled estrus (e.g., ovulatory) cycle length. The number of eggs available for ovulation each cycle are therefore depicted. ŌvSim also outputs these data in Panel C in text format, useful for finer analyses of ovulatory follicle number. 
 
-![2C](2C.png)
+![2C](OvSim_Figures/2C.png)
 
