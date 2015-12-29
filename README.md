@@ -2,11 +2,7 @@
 
 Tools for the simulation and visualization of dynamic follicle development within the mammalian ovary have not been available. We hypothesized that establishing a simple set of rules for i) follicle growth activation, ii) granulosa cell proliferation, iii) granulosa cell death, and iv) individual follicle survival could provide the necessary starting points for a rudimentary simulation of stochastic follicle behavior over time. 
 
-We produced a function in the R language, providing the ability to conduct simulations of ovarian follicle population development that vary based on the above user-specified parameters (or inputs). 
-
-
-***JAY: A SHORT PARAGRAPH ABOUT R SPECIFICS. A PACKAGE? A SCRIPT? BRIEF INSTRUCTIONS ABOUT HOW TO USE GO HERE.***
-
+We produced a function in the R language called ovsim.R, that can be used to conduct simulations of ovarian follicle population development that vary based on the above user-specified parameters (or inputs).
 
 To our surprise, the simple probability model produced remarkably accurate representations of follicle population dynamics, closely matching the biologically observed number of surviving follicles (and thus an estimate of ovulated eggs) over time. Although this does not prove that the apparently complex process of follicle population dynamics is simple, the results show that a relatively simple probability-dependent process is consistent with and could help us better understand the process of follicle development in nature.
 
