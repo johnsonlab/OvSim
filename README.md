@@ -12,7 +12,7 @@ For a truncated example, consider *n* matrix entries (containing the number 1, 2
 
 In ŌvSim, the starting number of follicles in the ovary (*NF*), the number of days of time (*ND*) to run the simulation, and the length of the ovulatory cycle (*cyclength*) can all be specified. We set the number of mouse ovarian follicles to 3000, including 2250 primordial follicles for most of our studies. Ovulatory cycle length for mice is set at 4, 4.5, or 5 days. The script then continues to loop with "daily" probability calculations and operations upon each follicle entry in the matrix. A flow chart of the operations upon each matrix entry is shown in Figure 1. 
 
-![Fig1](OvSim_Fig1.jpg)
+![Fig1](OvSim_Figures/OvSim_Fig1.jpg)
 
 An example of variable entry into the *follicle* function as shown in the following example. 
 
