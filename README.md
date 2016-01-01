@@ -12,7 +12,7 @@ To our surprise, the simple DTMC model produced remarkably accurate representati
 
 For a truncated example, consider *n* matrix entries (containing the number 1, 2, or 3), representing *n* growth arrested ovarian "follicles" that contain 1, 2, or 3 pregranulosa cells at start. Upon activating the simulation, a subset of follicles can growth activate at each step, while the remainder will remain growth-arrested and maintain an unchanged number of pregranulosa cells. Instead, growing follicles double in granulosa cell population at each step, minus a user-controlled factor of granulosa cell death. At each step, follicles thus grow exponentially (minus the cell death factor) or die. If a follicle that had begun to grow commits to death (atresia), its granulosa cell number is set to zero.
 
-In ŌvSim, the starting number of follicles in the ovary (*NF*), the number of days of time (*ND*) to run the simulation, and the length of the ovulatory cycle (*cyclength*) can all be specified. We set the number of mouse ovarian follicles to 3000, including 2700 primordial follicles for most of our studies. Ovulatory cycle length for mice is set at 4, 4.5, or 5 days. The script then continues to loop with "daily" probability calculations and operations upon each follicle entry in the matrix. A flow chart of the operations upon each matrix entry is shown in Figure 1. 
+In ŌvSim, the starting number of follicles in the ovary (*NF*), the number of days of time (*ND*) to run the simulation, and the length of the ovulatory cycle (*cyclength*) can all be specified. We set the number of *mouse* ovarian follicles to 3000, including 2700 primordial follicles for most of our studies. Ovulatory cycle length for mice is set at 4, 4.5, or 5 days. The script then continues to loop with "daily" probability calculations and operations upon each follicle entry in the matrix. A flow chart of the operations upon each matrix entry is shown in Figure 1. 
 
 ![Fig1](OvSim_Figures/OvSim_Fig1.jpg)
 
@@ -42,7 +42,11 @@ Panel 2B is a plot of the growth and death of individual follicles that die with
 
 ![2B](OvSim_Figures/2B.png)
 
-Last, Panel 2C is a histogram plot of the distribution of follicles that survive to ovulatory size, grouped in 4 day increments equivalent to the modeled estrus (e.g., ovulatory) cycle length. The number of eggs available for ovulation each cycle are therefore depicted. ŌvSim also outputs the data in Panel C in text format, useful for finer analyses of ovulatory follicle number. 
+The last panel of mouse simulation data, Panel 2C, is a histogram plot of the distribution of follicles that survive to ovulatory size, grouped in 4 day increments equivalent to the modeled estrus (e.g., ovulatory) cycle length. The number of eggs available for ovulation each cycle are therefore depicted. ŌvSim also outputs the data in Panel C in text format, useful for finer analyses of ovulatory follicle number. 
 
 ![2C](OvSim_Figures/2C.png)
+
+hOvSim is a "fork" of OvSim, really just R function settings tuned to reflect the human ovary's number of follicles and reproductive lifespan. Example output of hOvsim is found as follows:
+
+![hOvSim](hOvSim_Figures/final_9995_90.jpg)
 
