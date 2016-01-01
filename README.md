@@ -1,10 +1,10 @@
 # ŌvSim
 
-Organism selection note: OvSim's default settings simulate follicle dynamics of the *mouse* ovary. A mouse simulation of ~3000 follicles over 420 days of postnatal life runs in several minutes on modern hardware. Preliminary experimental settings for the simulation of the *human* ovary (30-50,000 follicles / 25 years of simulated time - runs in several **hours**) can be found in [hOvSim](hOvSim_R_Code) and example human simulation output can be found below and in [hOvSim Figures](hOvSim_Figures).
+Organism selection note: OvSim's default settings simulate follicle dynamics of the *mouse* ovary. A mouse simulation of ~3000 follicles over 420 days of postnatal life runs in several minutes on modern hardware. Preliminary experimental settings for the simulation of the *human* ovary (30-50,000 follicles / 25 years of simulated time - runs in several **hours**) can be found in [hŌvSim](hOvSim_R_Code) and example human simulation output can be found below and in [hŌvSim Figures](hOvSim_Figures).
 
 During postnatal life, thousands of follicles each containing an egg cell (oocyte) growth activate, grow, and die within the mammalian ovary. Growth occurs when a few pre-granulosa cells around an oocyte begin to proliferate. Little is known of the factors that control which follicles growth activate and which follicles survive to complete development and ovulate. Tools for the simulation and visualization of dynamic [follicle development](https://en.wikipedia.org/wiki/Ovarian_follicle) have not been available. We hypothesized that establishing a simple set of rules for i) follicle growth activation, ii) granulosa cell proliferation, iii) granulosa cell death, and iv) individual follicle survival could provide the necessary starting points for a rudimentary simulation of stochastic follicle behavior over time. 
 
-Using a [discrete time Markov chain (DTMC)](https://en.wikipedia.org/wiki/Markov_chain) approach (Figure 1, below), we produced a function in the R language called **"ovsim.R"**, that can be used to conduct simulations of ovarian follicle population development that vary based on the above user-specified parameters (or inputs).
+Using a [discrete time Markov chain (DTMC)](https://en.wikipedia.org/wiki/Markov_chain) approach (Figure 1, below), we produced a function in the R language called ŌvSim (file [ovsim.R](OvSim_R_Code/ovsim.R), that can be used to conduct simulations of ovarian follicle population development that vary based on the above user-specified parameters (or inputs).
 
 To our surprise, the simple DTMC model produced remarkably accurate representations of follicle population dynamics, closely matching the biologically observed number of surviving follicles (and thus an estimate of ovulated eggs) over time. Although this does not prove that the apparently complex process of follicle population dynamics is simple, the results show that a relatively simple probability-dependent process is consistent with and could help us better understand the process of follicle development in nature.
 
@@ -46,7 +46,9 @@ The last panel of mouse simulation data, Panel 2C, is a histogram plot of the di
 
 ![2C](OvSim_Figures/2C.png)
 
-hOvSim is a "fork" of OvSim, really just R function settings tuned to reflect the human ovary's number of follicles and reproductive lifespan. Example output of hOvsim is found as follows:
+### hOvSim
+
+hOvSim is a "fork" of OvSim, really just R function settings tuned to reflect the human ovary's number of follicles and reproductive lifespan. Example output of hOvsim is found as follows, where the daily fixed probability that each primordial follicle stays growth arrested (*phold*) = 0.9995, and the conditional probability that each growing follicle survives that day (*cond.pdub*) is 0.9:
 
 ![hOvSim](hOvSim_Figures/final_9995_90.jpg)
 
