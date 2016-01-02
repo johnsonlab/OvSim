@@ -1,6 +1,6 @@
 # ŌvSim
 
-Organism selection note: OvSim's default settings simulate follicle dynamics of the *mouse* ovary. A mouse simulation of ~3000 follicles over 420 days of postnatal life runs in several minutes on modern hardware. Preliminary experimental settings for the simulation of the *human* ovary (30-50,000 follicles / 25 years of simulated time - runs in several **hours**) can be found in [hŌvSim](hOvSim_R_Code) and example human simulation output can be found below and in [hŌvSim Figures](hOvSim_Figures).
+**Organism selection note**: OvSim's default settings simulate follicle dynamics of the *mouse* ovary. A mouse simulation of ~3000 follicles over 420 days of postnatal life runs in several minutes on modern hardware. Preliminary experimental settings for the simulation of the *human* ovary (30-50,000 follicles / 25 years of simulated time - runs in several **hours**) can be found in [hŌvSim](hOvSim_R_Code) and example human simulation output can be found below and in [hŌvSim Figures](hOvSim_Figures).
 
 During postnatal life, thousands of follicles each containing an egg cell (oocyte) growth activate, grow, and die within the mammalian ovary. Growth occurs when a few pre-granulosa cells around an oocyte begin to proliferate. Little is known of the factors that control which follicles growth activate and which follicles survive to complete development and ovulate. Tools for the simulation and visualization of dynamic [follicle development](https://en.wikipedia.org/wiki/Ovarian_follicle) have not been available. We hypothesized that establishing a simple set of rules for i) follicle growth activation, ii) granulosa cell proliferation, iii) granulosa cell death, and iv) individual follicle survival could provide the necessary starting points for a rudimentary simulation of stochastic follicle behavior over time. 
 
@@ -38,7 +38,7 @@ Here, 3000 total follicles are present at the start, 2700 of which are primordia
 
 ![2A](OvSim_Figures/2A.png)
 
-Panel 2B is a plot of the growth and death of individual follicles that die within the 420 days of simulated time. Granulosa cell number is represented by the dashed lines, and the time (and follicle ``size") of death is indicated by the letter ``D."
+Panel 2B is a plot of the growth and death of individual follicles that die within the 420 days of simulated time. Granulosa cell number is represented by the dashed lines, and the time (and follicle "size") of death is indicated by the letter "D."
 
 ![2B](OvSim_Figures/2B.png)
 
@@ -48,7 +48,7 @@ The last panel of mouse simulation data, Panel 2C, is a histogram plot of the di
 
 ### hOvSim
 
-hOvSim is a "fork" of OvSim, really just R function settings tuned to reflect the human ovary's number of follicles and reproductive lifespan. Example output of hOvsim is found as follows, where the daily fixed probability that each primordial follicle stays growth arrested (*phold*) = 0.9995, and the conditional probability that each growing follicle survives that day (*cond.pdub*) is 0.9. As of 1/1/16 the scale in the middle panel is set incorrectly. For orientation's sake, if time zero is human age at menarche (puberty, ~15), age 35 is day 7300, age 40 is day 9125, and age 50 is day 12775 (the end of the simulation).
+hOvSim is a "fork" of OvSim, really just R function settings tuned to reflect the human ovary's number of follicles and reproductive lifespan. Example output of hOvsim is found as follows, where 30,000 primordial follicles are present at the beginning, the stationary probability that each primordial follicle stays growth arrested (*phold*) = 0.9995, and the conditional probability that each growing follicle survives that day (*cond.pdub*) is 0.9. As of 1/1/16 the scale in the middle panel is set incorrectly. For orientation's sake, if time zero is human age at menarche (puberty, ~15), age 35 is day 7300, age 40 is day 9125, and age 50 is day 12775 (the end of the simulation).
 
 ![hOvSim](hOvSim_Figures/final_9995_90.jpg)
 
