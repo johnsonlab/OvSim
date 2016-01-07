@@ -48,7 +48,11 @@ The last panel of mouse simulation data, Panel 2C, is a histogram plot of the di
 
 ### hOvSim
 
-hOvSim is a "fork" of OvSim, really just R function settings tuned to reflect the human ovary's number of follicles and reproductive lifespan. Example output of hOvsim is found as follows, where 30,000 primordial follicles are present at the beginning, the stationary probability that each primordial follicle stays growth arrested (*phold*) = 0.9995, and the conditional probability that each growing follicle survives that day (*cond.pdub*) is 0.9. As of 1/1/16 the scale in the middle panel is set incorrectly. For orientation's sake, if time zero is human age at menarche (puberty, ~15), age 35 is day 7300, age 40 is day 9125, and age 50 is day 12775 (the end of the simulation).
+hOvSim is a "fork" of OvSim, really just R function settings tuned to reflect the human ovary's number of follicles and reproductive lifespan. The human ovary has evolved to ovulate one egg per ovulatory cycle using mechanism(s) that are not well understood. The process is referred to as follicle dominance. Keeping to the simple rules of ŌvSim, we depict the selection of the dominant follicle using a Markov state transition diagram as follows: 
+
+![hOvSim Markov](hOvSim_Figures/hMarkov.jpg)
+
+Example output of hOvsim is found as follows, where 30,000 primordial follicles are present at the beginning, the stationary probability that each primordial follicle stays growth arrested (*phold*) = 0.9995, and the conditional probability that each growing follicle survives that day (*cond.pdub*) is 0.9. As of 1/1/16 the scale in the middle panel is set incorrectly. For orientation's sake, if time zero is human age at menarche (puberty, ~15), age 35 is day 7300, age 40 is day 9125, and age 50 is day 12775 (the end of the simulation).
 
 ![hOvSim](hOvSim_Figures/final_9995_90.jpg)
 
