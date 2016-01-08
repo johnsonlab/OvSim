@@ -54,7 +54,7 @@ hOvSim is a "fork" of OvSim, really just R function settings tuned to reflect th
 
 Of the *x* follicles that survive and grow to the Antral stage of development per cycle, *1/x* is selected to complete development and ovulate, and the remaining *x-1/x* die. **This selection of a single dominant follicle is not currently modeled in hOvSim - instead, the total number of antral follicles that survive per cycle *and are thus available to be selected* are the output of the model**. 
 
-Example output of hOvsim is found as follows, where 30,000 primordial follicles are present at the beginning, the stationary probability that each primordial follicle stays growth arrested (*phold*) = 0.9995, and the conditional probability that each growing follicle survives that day (*cond.pdub*) is 0.9. As of 1/1/16 the scale in the middle panel is set incorrectly. For orientation's sake, if time zero is human age at menarche (puberty, ~15), age 35 is day 7300, age 40 is day 9125, and age 50 is day 12775 (the end of the simulation).
+Example output of hOvsim is found as follows, where 30,000 primordial follicles are present at the beginning, the stationary probability that each primordial follicle stays growth arrested (*phold*) = 0.9995, and the conditional probability that each growing follicle survives that day (*cond.pdub*) is 0.9. As of 1/1/16 the scale in the middle panel is set incorrectly [Issue 1](https://github.com/johnsonlab/OvSim/issues/1). For orientation's sake, if time zero is human age at menarche (puberty, ~15), age 35 is day 7300, age 40 is day 9125, and age 50 is day 12775 (the end of the simulation).
 
 ![hOvSim](hOvSim_Figures/final_9995_90.jpg)
 
