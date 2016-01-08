@@ -1,6 +1,11 @@
 ## Important Literature and Notes
 
-Lai et al.,2013:  
+Skodras and Marcelli, 2015
+[Computer-Generated Ovaries to Assist Follicle Counting Experiments](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0120242#sec002)
+
+This is an exciting approach that calculates follicle number within an ovary given volumes occupied by follicles of known size. 
+
+Lai et al., 2013:  
 [The significance of antral follicle size prior to stimulation in predicting ovarian response in a multiple dose GnRH antagonist protocol](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3544237/)
 
 Deb et al., 2013:  
