@@ -1,14 +1,14 @@
 ## Important Literature and Notes
 
 Durlinger et al. (Themmen), 2013
-[Control of Primordial Follicle Recruitment by Anti-Müllerian Hormone in the Mouse Ovary](http://press.endocrine.org/doi/abs/10.1210/endo.140.12.7204)
+[Control of Primordial Follicle Recruitment by Anti-MÃ¼llerian Hormone in the Mouse Ovary](http://press.endocrine.org/doi/abs/10.1210/endo.140.12.7204)
 
 AMH knockout mice - manuscript includes follicle counts and the perhaps surprising finding that only a subtle acceleration of primordial follicle growth activation manifests in the absence of AMH.
 
 Wallace and Kelsey, 2015
 [Human Ovarian Reserve from Conception to the Menopause](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0008772)
 
-This is an exciting approach that ..."model[s] the age-related population of NGFs in the human ovary from conception to menopause."
+This is an exciting approach that ..."model[s] the age-related population of NGFs in the human ovary from conception to menopause." It is really useful to view the follicle count trajectory on a log scale!
 
 Skodras and Marcelli, 2015
 [Computer-Generated Ovaries to Assist Follicle Counting Experiments](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0120242#sec002)
