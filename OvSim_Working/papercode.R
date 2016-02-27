@@ -14,8 +14,8 @@ if (FALSE) {
     #ans <- ovsim(phold="custom1")
     foo[i,] <- ans$nongrowthactivated.byday
   }
-  if (NNN>1) write.table(foo, "confsim_99.csv", sep=",", row.names=F, col.names=T)
-  #if (NNN>1) write.table(foo, "confsim_constant.csv", sep=",", row.names=F, col.names=T)
+  #if (NNN>1) write.table(foo, "confsim_99.csv", sep=",", row.names=F, col.names=T)
+  if (NNN>1) write.table(foo, "confsim_constant.csv", sep=",", row.names=F, col.names=T)
   
 }
 
