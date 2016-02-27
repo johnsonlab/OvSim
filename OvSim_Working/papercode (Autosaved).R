@@ -5,17 +5,17 @@ if (FALSE) {
   
   # Run this twice commenting/uncommenting to produce the two needed
   # CSV files.
-  NNN <- 1000
+  NNN <- 10 #1000
   foo <- matrix(0, NNN, 420)
   for (i in 1:NNN) {
     cat("\n\nStep", i, "\n")
     set.seed(i)
-    #ans <- ovsim()
-    ans <- ovsim(phold="custom1")
+    ans <- ovsim()
+    #ans <- ovsim(phold="custom1")
     foo[i,] <- ans$nongrowthactivated.byday
   }
-  if (NNN>1) write.table(foo, "confsim_99.csv", sep=",", row.names=F, col.names=T)
-  #if (NNN>1) write.table(foo, "confsim_constant.csv", sep=",", row.names=F, col.names=T)
+  #if (NNN>1) write.table(foo, "confsim_99.csv", sep=",", row.names=F, col.names=T)
+  if (NNN>1) write.table(foo, "confsim_constant.csv", sep=",", row.names=F, col.names=T)
   
 }
 

@@ -306,3 +306,25 @@ ans <- ovsim(pdfname="final.pdf")#
 write.csv(ans$all, "finalsample.csv", row.names=F)
 source("ovsim.R")
 ovsim()
+source('ovsim')
+source('ovsim.R')
+ovsim
+ovsim()
+source(papercode.R)
+source('papercode.R')
+papercode()
+source('papercode.R')
+papercode()
+ovsim()
+mean(nongrowthactivated.by.day)
+mean(nongrowthactivated.byday)
+nongrowthactivated.byday
+mean(nga.byday)
+ls()
+pdfname
+phold
+$phold
+z
+phold.org
+phold.orig
+source('papercode.R')
